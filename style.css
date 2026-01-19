@@ -369,6 +369,10 @@ nav button img {
         font-size: 32px;
     }
 
+    #about-us .container hr {
+        margin: 40px 0px;
+    }
+
     #about-us .container .testi {
         grid-template-columns: repeat(2, 1fr);
     }
