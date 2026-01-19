@@ -169,6 +169,155 @@ nav button img {
     background-image: none;
 }
 
+
+
+/* About Us Seciton */
+
+#about-us {
+    color: #fff;
+    background-color: #1A0B2E;
+    padding: 50px 8px 120px;
+}
+
+#about-us .container>h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+#about-us .container>p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 810px;
+    margin: 0 auto;
+    color: #d1ced5;
+
+}
+
+#about-us .container hr {
+    border: none;
+    height: 1px;
+    background-color: #ffffff21;
+    margin: 80px 0px;
+}
+
+#about-us .container .testi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    gap: 10px;
+
+}
+
+#about-us .container .testi .box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-us .container .testi .box h2 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #00FF88;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+#about-us .container .testi .box p {
+    font-size: 16px;
+    color: #d1ced5;
+    text-transform: uppercase;
+}
+
+
+/* why-choose Section */
+
+#why-choose {
+    padding: 120px 20px;
+    background-color: #230E3D;
+}
+
+#why-choose>.container>h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.item {
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item img {
+    max-width: 55px;
+    height: auto;
+}
+
+.item h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.item p {
+    color: #aa9fb8;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.item-1 {
+    grid-row: span 2;
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+.item-2 {
+    grid-column: span 2;
+
+    img {
+        width: 40px;
+        height: 50px;
+    }
+}
+
+.item-3 {
+    grid-column: span 2;
+}
+
+.item-4 {
+    grid-column: span 2;
+}
+
+/* .item-5 {
+    grid-column: span 2;
+} */
+
+/* Responsive  */
+
+
+
 @media screen and (max-width:767px) {
     .logo img {
         max-width: 137px;
@@ -210,7 +359,48 @@ nav button img {
         right: -10px;
     }
 
+    #banner .container .flex {
+        margin-bottom: 24px !important;
+    }
 
+    /* About us Section */
 
-    /* banner section */
+    #about-us .container>h2 {
+        font-size: 32px;
+    }
+
+    #about-us .container .testi {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about-us .container .testi .box h2 {
+        font-size: 40px;
+    }
+
+    /* Why Choose Us */
+    #why-choose {
+        padding: 40px 20px;
+    }
+
+    #why-choose>.container>h2 {
+        font-size: 32px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .item {
+        padding: 24px;
+    }
+
+    .item-1 {
+        grid-column: span 2;
+
+    }
+
+    .item-5 {
+        grid-column: span 2;
+    }
 }
