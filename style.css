@@ -115,7 +115,7 @@ nav button img {
 }
 
 #banner p {
-    color: #fff;
+    color: #d1d0d9;
     margin-bottom: 24px;
     text-align: center;
 }
@@ -314,6 +314,171 @@ nav button img {
     grid-column: span 2;
 } */
 
+/* Feature Episode Section */
+
+
+#episode {
+    background-color: #1A0B2E;
+    padding: 120px 8px;
+}
+
+#episode .container h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.episode-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 120px;
+}
+
+.card iframe {
+    width: 100%;
+}
+
+.episode-content {
+    background-color: #250d44;
+    padding: 24px;
+}
+
+
+.episode-content h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.episode-content>p {
+    color: #a89eb4;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.time p {
+    color: #00ff88;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.host-container {
+    background-color: #250d44;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-radius: 40px;
+}
+
+
+
+.host-container h3 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.host-container p {
+    color: #a89eb4;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.social-icon {
+    display: flex;
+    gap: 8px;
+}
+
+.icon {
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #533C72;
+    border-radius: 999px;
+}
+
+.icon img {
+    display: flex;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+/* Footer Section */
+
+footer {
+    background-image: url('./assets/footer-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .logo {
+    width: 100%;
+    max-width: 410px;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+footer .logo img {
+    margin: 0 auto;
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+
+footer .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer .icon-text img {}
+
+footer .icon-text p {}
+
+footer .container p {
+    color: #a5a0b5;
+}
+
+
+
+
+/* Footer Section */
+
 /* Responsive  */
 
 
@@ -338,11 +503,9 @@ nav button img {
     /* banner section */
 
     #banner {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding: 40px 20px;
         background-size: cover;
         background-repeat: no-repeat;
-
     }
 
     .hero-circle {
@@ -364,6 +527,9 @@ nav button img {
     }
 
     /* About us Section */
+    #about-us {
+        padding: 40px 20px;
+    }
 
     #about-us .container>h2 {
         font-size: 32px;
@@ -388,11 +554,20 @@ nav button img {
 
     #why-choose>.container>h2 {
         font-size: 32px;
+        margin-bottom: 16px;
     }
 
     .grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
+    }
+
+    .item {
+        padding: 24px;
+    }
+
+    .item h2 {
+        font-size: 20px;
     }
 
     .item {
@@ -407,4 +582,64 @@ nav button img {
     .item-5 {
         grid-column: span 2;
     }
+
+    /* Feature Episode Section */
+    #episode {
+        background-color: #1A0B2E;
+        padding: 40px 20px;
+    }
+
+    #episode .container h2 {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .episode-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .card {
+        margin-bottom: 60px;
+    }
+
+    .episode-content {
+        padding: 16px;
+    }
+
+    .episode-content h3 {
+        font-size: 20px;
+    }
+
+    .host-container {
+        padding: 24px;
+        border-radius: 24px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icon {
+        justify-content: center;
+    }
+
+    /* Footer Section */
+
+
+    footer {
+        padding: 40px 20px;
+    }
+
+    footer .logo {
+        margin-bottom: 24px;
+    }
+
+    .icon-box {
+        max-width: 255px;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+
+    /* Footer Section */
+
 }
